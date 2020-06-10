@@ -51,7 +51,7 @@ const SignedIn = ({ location }) => {
           setMessage={setMessage}
           sendMessage={sendMessage}
         />
-        <Messages />
+        <Messages messages={messages} name={name} />
       </div>
     </div>
   );
