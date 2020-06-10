@@ -3,9 +3,11 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import SignedOut from "./layouts/SignedOut";
 import SignedIn from "./layouts/SignedIn";
 
-export default App = () => {
+const App = () => (
   <Router>
     <Route path="/" exact component={SignedOut} />
     <Route path="/chat" exact component={SignedIn} />
-  </Router>;
-};
+  </Router>
+);
+
+export default App;
